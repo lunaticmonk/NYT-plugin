@@ -5,5 +5,20 @@
   "version": "0.7",
 
   // Recommended
-  "description": "A plugin showing NYT news."
+  "description": "A plugin showing NYT news.",
+	  		
+   "browser_action": {
+    "default_popup": "index2.html"
+  },
+  "permissions": [
+    "activeTab",
+    "https://api.nytimes.com/svc/topstories/v1/home.json?api-keyc03450084d7c477181e7564d95b5023c"
+  ]
+  // "content_scripts": [
+  //   {
+  //     "matches":[ 
+  //       "https://api.nytimes.com/svc/topstories/v1/home.json"],
+  //        "js": ["jquery-3.1.0.min.js", "fetcher.js"]
+  //   }
+  // ]
 }
